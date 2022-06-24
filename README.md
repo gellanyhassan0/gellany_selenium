@@ -3,5 +3,5 @@ this project solve all issues in the world related to selenium and chromedriver 
 
 # steps:
 
-<code>chmod +x gellany_selenium_chromedrive.sh</code><br>
+<code>chmod +x gellany_selenium_chromedriver.sh</code><br>
 <code>./gellany_selenium_chromedrive</code><br>
