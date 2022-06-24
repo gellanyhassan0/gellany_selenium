@@ -5,3 +5,4 @@ this project solve all issues in the world related to selenium and chromedriver 
 
 <code>chmod +x gellany_selenium_chromedriver.sh</code><br>
 <code>./gellany_selenium_chromedriver</code><br>
+<code>python3 gellany_selenium_chromedriver_test.py</code><br>
