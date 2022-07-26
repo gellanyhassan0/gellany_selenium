@@ -24,10 +24,12 @@ class PythonOrgSearch():
         self.driver = driver
         self.payload = payload
 
+
     def main(self):
         try :
              
              self.driver.get("http://testphp.vulnweb.com/guestbook.php")
+
              textarea = self.driver.find_element(By.XPATH, "//textarea[1]")
              textarea.send_keys(self.payload)
               
@@ -43,6 +45,10 @@ class PythonOrgSearch():
                   Regex = re.compile(r'.{,10}%s.{,10}' % re.escape(self.payload), re.IGNORECASE)
                   print(Regex.findall(source))
                   #print(source)
+                  headers = self.driver.execute_script("var req = new XMLHttpRequest();req.open('GET', document.location, false);req.send(null);return req.getAllResponseHeaders()")
+                  headers = headers.splitlines()
+                  print(headers)
+                  
              else:
                  print("not found it") 
              
