@@ -9,6 +9,6 @@ cp -r chromedriver /usr/bin/
 apt-get install python3 -y
 apt-get install python3-pip -y
 yes|pip install selenium
-yes | pip install -r requirements.txt
+#yes | pip install -r requirements.txt
 
-#python3 gellany_selenium_chromedriver_test.py
+python3 gellany_selenium_chromedriver_test.py
